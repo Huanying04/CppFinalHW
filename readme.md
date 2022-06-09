@@ -3,6 +3,7 @@
 
 * [uVA 10473](#uva-10473)
 * [uVA 11455](#uva-11455)
+* [uva 12626](#uva-12626)
 * [uVA 10918](#uva-10918)
 
 # uVA 10473
@@ -136,6 +137,71 @@ int main() {
 ## 輸入測資畫面
 ![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva11455-1.PNG)
 
+
+# uVA 12626
+## 程式碼
+[uva12626.cpp](https://github.com/Huanying04/CppFinalHW/blob/master/uva12626.cpp)
+```cpp
+#include <iostream>
+#include <string.h>
+#include <algorithm>
+using std::cout;
+using std::cin;
+using std::string;
+
+int main() {
+    int testcase;
+    cin >> testcase;
+    while (testcase--) {
+        string pizza;
+        cin >> pizza;
+        int* ingredient = new int[6] {0}; // M, A, R, G, I, T
+
+        for (int i = 0; i < pizza.length(); i++) {
+            switch (pizza.at(i)) {
+                case 'M':
+                    ingredient[0]++;
+                    break;
+                case 'A':
+                    ingredient[1]++;
+                    break;
+                case 'R':
+                    ingredient[2]++;
+                    break;
+                case 'G':
+                    ingredient[3]++;
+                    break;
+                case 'I':
+                    ingredient[4]++;
+                    break;
+                case 'T':
+                    ingredient[5]++;
+                    break;
+            }
+        }
+
+        ingredient[1] /= 3;
+        ingredient[2] /= 2;
+
+        cout << *std::min_element(ingredient, ingredient + 6) << "\n";
+
+        delete ingredient;
+    }
+
+    return 0;
+}
+```
+
+## 解題心得
+
+
+## 簡單說明
+輸入字串，檢測可以組成幾個MARGARITA<br>
+只要簡單遍歷整個字串並統計M、A、R、G、I、T字母的數量就能得出結果了。
+
+
+## 輸入測資畫面
+![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva12626-1.PNG)
 
 # uVA 10918
 ## 程式碼
