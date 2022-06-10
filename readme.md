@@ -247,8 +247,8 @@ int main() {
 雖然不知道為什麼，但是只要輸出輸入的若干數的平均值和中位數(可能不是這個名字，因為中位數如果是奇數的話是要取中間兩個值的平均，但這邊只要取中間比較小的那個就好)就好了
 
 ## 輸入測資畫面
-![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-1.PNG)
-![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-2.PNG)
+![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-1.PNG)<br>
+![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-2.PNG)<br>
 (圖二的測資來自 https://www.udebug.com/UVa/10064 )
 
 
