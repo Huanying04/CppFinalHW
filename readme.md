@@ -203,6 +203,55 @@ int main() {
 ## 輸入測資畫面
 ![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva12626-1.PNG)
 
+
+# uVA 10064
+## 程式碼
+[uva10064.cpp](https://github.com/Huanying04/CppFinalHW/blob/master/uva10064.cpp)
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <math.h>
+using std::cout;
+using std::cin;
+
+int main() {
+    int friendCount;
+    while (cin >> friendCount) {
+        if (friendCount == 0) {
+            cout << "-1\n";
+            continue;
+        }
+
+        int sum = 0;
+        int* coordinates = new int[friendCount];
+        for (int i = 0; i < friendCount; i++) {
+            cin >> coordinates[i];
+            sum += coordinates[i];
+        }
+
+        std::sort(coordinates, coordinates + friendCount);
+        printf("%.2f %.2f\n", (float) sum / friendCount, (float) coordinates[(int) std::ceil(friendCount / 2.0) - 1]);
+
+        delete coordinates;
+    }
+
+    return 0;
+}
+```
+
+## 解題心得
+看不懂
+
+## 簡單說明
+雖然不知道為什麼，但是只要輸出輸入的若干數的平均值和中位數(可能不是這個名字，因為中位數如果是奇數的話是要取中間兩個值的平均，但這邊只要取中間比較小的那個就好)就好了
+
+## 輸入測資畫面
+![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-1.PNG)
+![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10064-2.PNG)
+(圖二的測資來自 https://www.udebug.com/UVa/10064 )
+
+
+
 # uVA 10918
 ## 程式碼
 [uva10918.cpp](https://github.com/Huanying04/CppFinalHW/blob/master/uva10918.cpp)
