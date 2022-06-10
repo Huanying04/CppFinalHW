@@ -1,11 +1,20 @@
 # 目錄
 (按照題目順序排列)
 
+* uVA 763
 * [uVA 10473](#uva-10473)
 * [uVA 11455](#uva-11455)
 * [uVA 12626](#uva-12626)
 * [uVA 10064](#uva-10064)
+* uVA 10301
+* uVA 10858
+* uVA 11519
+* uVA 10000
+* uVA 10153
+* uVA 10312
 * [uVA 10918](#uva-10918)
+* uVA 11368
+* uVA 240
 
 # uVA 10473
 ## 程式碼
@@ -312,6 +321,3 @@ f(0)=1, f(1)=0, g(0)=0, f(1)=1<br>
 
 ## 輸入測資畫面
 ![](https://github.com/Huanying04/CppFinalHW/blob/master/img/uva10918-1.PNG)
-
-
-# 還沒做完……或許?
